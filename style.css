@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+
+.header-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.75);
+    z-index: 999999;
+}
+
+body {
+    background-image: url(images/pexels-simon-berger-815503.jpg);
+    background-size: cover;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar-brand{
+    font-weight:700;
+    color: black;
+    font-size: large;
+}
+
+.nav-link{
+    font-weight: 700;
+}
+
+.cta{
+    border: 2px solid black;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.main {
+    width: 30%;
+    height: 200px;
+    /* border: solid #79a6ea; */
+    margin-top: 25% !important;
+    margin-inline: auto;
+    background-color: rgba(245, 149, 31, 0.993);
+}
