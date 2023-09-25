@@ -38,7 +38,7 @@ body {
 
 .main {
     width: 30%;
-    height: 200px;
+    min-height: 200px;
     /* border: solid #79a6ea; */
     margin-top: 25% !important;
     margin-inline: auto;
