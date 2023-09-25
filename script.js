@@ -15,14 +15,20 @@ function getWeatherInfo() {
     })
     .then(data => {
       let weatherInfo = document.getElementById("weatherInfo");
-      let temperature = data.main.temp;
+      let temperature = parseInt(data.main.temp - 273);
       let description = data.weather[0].description;
       let humidity = data.main.humidity;
+      let pressure = data.main.pressure;
+      let name = data.name;
+      let timezone = data.timezone
 
       let weatherHtml = `
+        <p>City Name: ${name}</p>
         <p>Temperature: ${temperature}°C</p>
         <p>Description: ${description}</p>
         <p>Humidity: ${humidity}%</p>
+        <p>Pressure: ${pressure}%</p>
+        <p>Timezone: ${timezone}</p>
       `;
 
       weatherInfo.innerHTML = weatherHtml;
